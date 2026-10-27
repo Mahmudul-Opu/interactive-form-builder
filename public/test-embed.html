@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>FormFlow Widget Test</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    header {
+      background: white;
+      padding: 20px 8%;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #6366f1;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    h1 {
+      font-size: clamp(35px, 6vw, 56px);
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #64748b;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #6366f1;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer p {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">DemoWebsite</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Website</h1>
+
+      <p>
+        This is a demonstration website for testing
+        the FormFlow interactive chatbot widget.
+      </p>
+
+      <p>
+        Click the floating chat button in the bottom-right
+        corner to answer our questions.
+      </p>
+
+      <a href="#" class="button">
+        Explore Our Website
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 DemoWebsite</p>
+  </footer>
+
+  <!--
+    Replace YOUR_FORM_SLUG with the slug
+    of a published form from your dashboard.
+  -->
+
+  <script
+    src="/embed.js"
+    data-form="YOUR_FORM_SLUG"
+  ></script>
+</body>
+</html>
